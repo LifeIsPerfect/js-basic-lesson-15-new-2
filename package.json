@@ -1,0 +1,14 @@
+{
+  "name": "lesson-15",
+  "version": "1.0.0",
+  "description": "This is the solution to the problems from lesson 15",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Alexander Skripko",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
