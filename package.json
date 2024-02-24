@@ -5,11 +5,13 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest",
-    "test-coverage" : "jest --coverage"
+    "test-coverage": "jest --coverage",
+    "prettier": "prettier --write src/**/*.js"
   },
   "author": "Alexander Skripko",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5"
   }
 }
