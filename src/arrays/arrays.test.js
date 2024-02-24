@@ -23,48 +23,46 @@ describe("Homework #5, task #1", () => {
 
 describe("Homework #5, task #2", () => {
     // Можно перенести сюда doubleArrayValues = require('./arrays.js');.
-    describe("Typical cases", () => {
-        it("Case #1", () => {
-            expect( doubleArrayValues( [1, 2, 3] ) ).toStrictEqual( [2, 4, 6] );
-        } )
+    describe("Checking typical case", () => {
+        expect( doubleArrayValues( [1, 2, 3] ) ).toBe( [2, 4, 6] );
     } )
 
-    describe("Edge cases", () => {
-        it("Case #1. Empty array", () => {
-            expect( doubleArrayValues( [] ) ).toStrictEqual( [] );
+    describe("Checking edge cases", () => {
+        it("Empty array 0", () => {
+            expect( sum( [] ) ).toBe( [] );
         })
     } )
 })
 
 
-//findMaxMin = require('./arrays.js');
+findMaxMin = require('./arrays.js');
 
 describe( "Homework #5, task #3", () => {
     // Можно перенести сюда doubleArrayValues = require('./arrays.js');.
     describe( "Typical cases", () => {
         it( "Case #1", () => {
-            expect(findMaxMin([1, 2, 3, 4])).toStrictEqual( {
+            expect(findMaxMin([1, 2, 3, 4])).toBe( {
                 max: 4,
                 min: 1,
             } );
         })
 
         it( "Case #2", () => {
-            expect(findMaxMin([4, 3, 2, 1])).toStrictEqual( {
+            expect(findMaxMin([4, 3, 2, 1])).toBe( {
                 max: 4,
                 min: 1,
             } );
         })
 
         it( "Case #3", () => {
-            expect(findMaxMin([4, -3, 7, 1])).toStrictEqual( {
-                max: 7,
-                min: -3,
+            expect(findMaxMin([4, -3, 7, 1])).toBe( {
+                max: -3,
+                min: 7,
             } );
         })
 
         it( "Case #4", () => {
-            expect(findMaxMin([-4, -3, -7, -1])).toStrictEqual( {
+            expect(findMaxMin([-4, -3, -7, -1])).toBe( {
                 max: -1,
                 min: -7,
             } );
@@ -74,21 +72,21 @@ describe( "Homework #5, task #3", () => {
 
     describe( "Edge cases", () => {
         it("Case #1. Empty array", () => {
-            expect( findMaxMin( [] ) ).toStrictEqual( { 
+            expect( findMaxMin( [] ) ).toBe( { 
                 max : undefined,
                 min : undefined,
             } );
         })
 
         it("Case #2. Single element array", () => {
-            expect( findMaxMin( [7] ) ).toStrictEqual( { 
+            expect( findMaxMin( [7] ) ).toBe( { 
                 max : 7,
                 min : 7,
             } );
         })
 
         it("Case #3. Same array elements", () => {
-            expect( findMaxMin( [5, 5, 5, 5] ) ).toStrictEqual( { 
+            expect( findMaxMin( [5, 5, 5, 5] ) ).toBe( { 
                 max : 5,
                 min : 5,
             } );
