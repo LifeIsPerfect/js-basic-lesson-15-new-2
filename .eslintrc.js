@@ -10,6 +10,7 @@ module.exports = {
         ecmaVersion: 6,
         sourceType: 'module',
     },
+    ignorePatterns: ["!.husky"],
     rules: {
         'space-before-function-paren': ["error", "never"],
         'space-in-parens': ["error", "always"],
