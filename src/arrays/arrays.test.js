@@ -27,7 +27,7 @@ describe( 'Homework #5, task #2', () => {
 
   describe( 'Edge cases', () => {
     it( 'Case #1. Empty array', () => {
-      expect( sum( [] ) ).toStrictEqual( [] );
+      expect( doubleArrayValues( [] ) ).toStrictEqual( [] );
     } );
   } );
 } );
