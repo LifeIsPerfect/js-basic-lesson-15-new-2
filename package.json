@@ -6,9 +6,7 @@
   "scripts": {
     "test": "jest",
     "test-cov": "jest --coverage --coverageReporters=\"json-summary\"",
-    "lint": "eslint --debug src/ .husky/governcoverage.js",
-    "lint-write": "eslint --debug src/ --fix",
-    "prepare": "husky"
+    "lint": "eslint --debug src/ .husky/governcoverage.js"
   },
   "author": "Alexander Skripko",
   "license": "ISC",
