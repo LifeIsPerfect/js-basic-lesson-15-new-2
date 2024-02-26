@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest",
-    "test-cov": "jest --coverage --coverageReporters=\"json-summary\"",
+    "test-cov": "jest --coverage",
+    "test-cov-sum": "jest --coverage --coverageReporters=\"json-summary\"",
     "lint": "eslint --debug src/ .husky/governcoverage.js"
   },
   "author": "Alexander Skripko",
