@@ -1,4 +1,4 @@
-const diff = ( a, b ) => a > b ? (a - b) : (b - a);
+const diff = ( a, b ) => a > b ? ( a - b ) : ( b - a );
 
 const isWord = ( str ) => /^[a-zA-Z]+$/.test( str );
 

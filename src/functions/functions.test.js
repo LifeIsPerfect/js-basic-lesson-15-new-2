@@ -1,36 +1,21 @@
 const { diff, isWord, pow } = require( './functions' );
 
-
-/* describe( 'Homework #6, task #1', () => {
-    describe( 'Typical cases', () => {
-        it( 'Case #1', () => {
-            expect( ).toBe( );
-        } );
-    } );
-
-    describe( 'Edge cases', () => {
-        it( 'Case #1. Empty array', () => {
-          expect( ).toBe( );
-        } );
-    } );
-} ); */
-
 describe( 'Homework #6, task #1', () => {
     describe( 'Typical cases', () => {
         it( 'Case #1', () => {
-            expect(  diff(3, 7) ).toBe( 4 );
+            expect( diff( 3, 7 ) ).toBe( 4 );
         } );
 
         it( 'Case #2', () => {
-            expect(  diff(-3, -7) ).toBe( 4 );
+            expect( diff( -3, -7 ) ).toBe( 4 );
         } );
 
         it( 'Case #3', () => {
-            expect(  diff(-0.5, 0.5) ).toBe( 1 );
+            expect( diff( -0.5, 0.5 ) ).toBe( 1 );
         } );
 
-        it( 'Case #3', () => {
-            expect(  diff(2.5, 1.5) ).toBe( 1 );
+        it( 'Case #4', () => {
+            expect( diff( 2.5, 1.5 ) ).toBe( 1 );
         } );
     } );
 
@@ -74,13 +59,13 @@ describe( 'Homework #6, task #2', () => {
 describe( 'Homework #6, task #3', () => {
     describe( 'Typical cases', () => {
         it( 'Case #1', () => {
-            expect( pow(2, 3) ).toBe( 8 );
+            expect( pow( 2, 3 ) ).toBe( 8 );
         } );
     } );
 
     describe( 'Edge cases', () => {
         it( 'Case #1. Power is 0', () => {
-          expect( pow( 3, 0 )).toBe( 1 );
+          expect( pow( 3, 0 ) ).toBe( 1 );
         } );
 
         it( 'Case #2. Base is 0', () => {
