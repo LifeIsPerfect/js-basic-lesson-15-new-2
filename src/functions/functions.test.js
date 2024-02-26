@@ -80,27 +80,32 @@ describe( 'Homework #6, task #3', () => {
 
     describe( 'Edge cases', () => {
         it( 'Case #1. Power is 0', () => {
-          expect( ).toBe( );
+          expect( pow( 3, 0 )).toBe( 1 );
         } );
 
         it( 'Case #2. Base is 0', () => {
-            expect( ).toBe( );
+            expect( pow( 0, 2 ) ).toBe( 0 );
+          } );
+        
+          it( 'Case #2. Power and base are 0', () => {
+            // https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D0%BB%D1%8C_%D0%B2_%D0%BD%D1%83%D0%BB%D0%B5%D0%B2%D0%BE%D0%B9_%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%B8
+            expect( pow( 0, 0 ) ).toBe( undefined ); 
           } );
 
         it( 'Case #3. Power is 1', () => {
-            expect( ).toBe( );
+            expect( pow( 4, 1 ) ).toBe( 4 );
         } );
 
         it( 'Case #4. Base is 1', () => {
-            expect( ).toBe( );
+            expect( pow( 1, 999 ) ).toBe( 1 );
         } );
 
         it( 'Case #5. Base is negative', () => {
-            expect( ).toBe( );
+            expect( pow( -2, 2 ) ).toBe( 4 );
         } );
 
         it( 'Case #6. Power is negative', () => {
-            expect( ).toBe( );
+            expect( pow( 2, -2 ) ).toBe( undefined ); // Предполагаю, что с дробями не работаем.
         } );
     } );
 } );
