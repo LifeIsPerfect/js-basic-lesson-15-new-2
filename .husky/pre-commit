@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+npm run test
+npm run test-cov-sum
+node .husky/governcoverage.js
+if [ $? -eq 0 ] ; then
+  cp './.coverage/coverage-summary.json' './.lastcoverage.json';
+fi
