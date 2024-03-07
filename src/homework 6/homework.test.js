@@ -1,4 +1,4 @@
-const { diff, isWord, pow } = require( './functions' );
+const { diff, isWord, pow } = require( './homework' );
 
 describe( 'Homework #6, task #1', () => {
     describe( 'Typical cases', () => {

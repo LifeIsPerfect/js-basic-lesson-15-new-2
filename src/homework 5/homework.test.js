@@ -1,4 +1,4 @@
-const { sum, doubleArrayValues, findMaxMin } = require( './arrays' );
+const { sum, doubleArrayValues, findMaxMin } = require( './homework' );
 
 describe( 'Homework #5, task #1', () => {
   describe( 'Typical cases', () => {
